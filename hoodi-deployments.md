@@ -1,0 +1,38 @@
+Deploy command:
+
+npm i 
+
+node dist/index.js \
+  --private-key 0x \
+  --json-rpc https://0xrpc.io/hoodi \
+  --weth9-address 0x14cd52D4FCe18CC4ffADb9E2356740c9507B0eC9 \
+  --native-currency-label ETH \
+  --owner-address 0x4da9f34f83d608cAB03868662e93c96Bc9793495
+
+Hoodi deployments:
+
+Core Contracts
+* UniswapV3Factory: 0xdc05CD9246d3aF18628E3303b6a579659e9B1F9b
+* Multicall2: 0x904a97F3a38fC836aB5bFc7C3f0fB70FdbA3320A
+* ProxyAdmin: 0x0728c295A9B5207DaEdf9BD8AcCC1cbEf59Be0C4
+* TickLens: 0x53DEFba66202C8A3c92da19228c0e00A2C689401
+
+ NFT & Position Management
+* NFTDescriptor Library (v1.3.0): 0x80985c263Ca4D691aAaa86fc5ec3A27db3043358
+* NonfungibleTokenPositionDescriptor (v1.3.0): 0x6B003AbF35fccAfaB959483Bb6862cC573B64477
+* Descriptor Proxy: 0xb08c4F2f3901C89dEDb8dea8558B4819641b01A3
+* NonfungiblePositionManager: 0xEd6844FAEd8a049Cbd90A7513D0100C03e51EC09
+
+Supporting & Utility Contracts
+* V3Migrator: 0x49C836634F87Ce635921a68C4e5068B4ed03F55f
+* V3Staker: 0x7aDc570e147344f028216Dd9903ce14AA297e040
+* QuoterV2: 0x018FC7828A094375ae6C46B2E66d6bEEB9d2D7B5
+* SwapRouter02: 0x301906A8A6F393870390B50A0E2A8891B026e6Fc
+
+Ownership
+* Factory Owner: 0x4da9f34f83d608cAB03868662e93c96Bc9793495
+* ProxyAdmin Owner: 0x4da9f34f83d608cAB03868662e93c96Bc9793495
+
+Tokens:
+USDC: 0xFf32778D4d3d6E1Ac9A859eBACB360F5118F837C
+SSV: 0x619b5EAD9A00795E1AB8Ef41E7f1B81c850Ab0C6

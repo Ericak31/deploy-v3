@@ -1,0 +1,7 @@
+# Generated environment file
+.env.local
+
+# Temporary files
+*.tmp
+*.log
+
