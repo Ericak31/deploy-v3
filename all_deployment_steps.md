@@ -44,3 +44,23 @@ Or run all steps in sequence:
 ```bash
 bash run-all.sh
 ```
+
+
+
+## Use case
+
+```
+Flash loan 1000 USDC
+Trade 1000 USDC <> 1 WETH 
+Bridge 1 WETH to Rollup B 
+Trade 1 WETH for 1010 USDC
+Bridge 1010 USDC to Rollup B 
+Pay back loan with 1000 USDC
+Keep 10 USDC (-fees)
+```
+
+Rollup A: 
+USDC <> WETH 
+
+Rollup B: 
+USDC <> WETH 

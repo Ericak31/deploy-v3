@@ -18,6 +18,17 @@ export TOKEN0=0x619b5EAD9A00795E1AB8Ef41E7f1B81c850Ab0C6  # SSV (lower address)
 export TOKEN1=0xFf32778D4d3d6E1Ac9A859eBACB360F5118F837C  # USDC (higher address)
 export FEE=500  # 0.05% fee tier
 
+# --- FEE TIER OPTIONS & FULL-RANGE TICKS ---
+# Uniswap V3 standard fee tiers and their corresponding tick spacing:
+# - FEE=100   (0.01%): tickSpacing=1  -> TICK_LOWER=-887272, TICK_UPPER=887272
+# - FEE=500   (0.05%): tickSpacing=10 -> TICK_LOWER=-887270, TICK_UPPER=887270  (current)
+# - FEE=3000  (0.3%):  tickSpacing=60 -> TICK_LOWER=-887220, TICK_UPPER=887220
+# - FEE=10000 (1%):    tickSpacing=200 -> TICK_LOWER=-887200, TICK_UPPER=887200
+#
+# Note: Ticks must be multiples of the tickSpacing. For full-range positions,
+# we use the maximum valid ticks that are multiples of tickSpacing and within
+# Uniswap V3's maximum tick range of -887272 to 887272.
+
 # --- PRESET FULL-RANGE TICKS (for FEE=500; tickSpacing=10) ---
 # Use full-range for testing to avoid computing bounds
 export TICK_LOWER=-887270
